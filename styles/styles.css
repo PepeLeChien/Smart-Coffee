@@ -12,7 +12,8 @@ html {
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #E8E8E8;
+    height: 100vh;
 }
 
 .logo__div {
@@ -45,8 +46,8 @@ body {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
-    gap: 3rem;
+    margin-top: 3rem;
+    gap: 2rem;
 }
 
 .main__div h2 {
