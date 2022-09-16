@@ -47,7 +47,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .main__div h2 {
@@ -60,7 +60,6 @@ body {
 }
 .main__div a {
     height: auto;
-    margin-top: 1rem;
 }
 
 .main__div button {

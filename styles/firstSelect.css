@@ -11,6 +11,10 @@ html {
     font-size: 62.5%;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 body {
     background-color: #E8E8E8;
     height: 100vh;
@@ -47,8 +51,8 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    gap: 3.8rem;
-    margin-top: 5rem;
+    gap: 3rem;
+    margin-top: 4rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
@@ -90,4 +94,6 @@ body {
     justify-content: center;
 }
 
-
+.main__div .tables:checked {
+    background-color: aqua;
+}
