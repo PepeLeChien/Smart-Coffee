@@ -12,5 +12,5 @@ function eatInside(){
 
 function eatOutside(){
     order.orderPlace = 'outside';
-    location.href = "../index.html";
+    location.href = "../pages/clientInfo.html";
 }
