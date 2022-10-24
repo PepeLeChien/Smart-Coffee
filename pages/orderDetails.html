@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="../styles/orderDetails.css">
+</head>
+<body>
+    <section class="header">
+        <a class=triangle href="../pages/selectCoffee.html"></a>
+    
+        <div class="logo__div">
+            <a href="../index.html">
+                <h1>SMART COFFEE</h1>
+            </a>
+        </div>
+    </section>
+    
+    <section class="main__div">
+        <h2>(Nombre del Café)</h2>
+        
+        <div class="sizes__div">
+            <img src="" alt="">
+            <div>
+                <button class="size--button">GIGANTE</button>
+                <button class="size--button">GRANDE</button>
+                <button class="size--button">NORMAL</button>
+            </div>
+        </div>
+        
+        <div class="options__div">
+
+            <h3>OPCIONES:</h3>
+
+            <form action="sugar__form">
+                <label for="sugar--input">CUBOS DE AZÚCAR</label>
+                <input id="sugar--input" type="range" min="0" max="5" step="1" value="2"
+                onchange="document.getElementById('ice--output').value=value" list="ticks--sugar">
+                <output for="sugar--input" id="ice--output">2</output>
+                <datalist id="ticks--sugar">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                </datalist>
+            </form>
+
+            <form action="temp__form">
+                <label for="temp--input">TEMPERATURA</label>
+                <input id="temp--input" type="range" min="0" max="2" step="1" value="2"
+                onchange="document.getElementById('temp--output').value=value" list="ticks--temp">
+                <datalist id="ticks--temp">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                </datalist>
+            </form>
+
+            <div>
+                <p>CREMA</p>
+                <div>
+                    <button>CON CREMA</button>
+                    <button>SIN CREMA</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <button onclick="changeLocation()">SIGUIENTE</button>
+    </section>
+    
+    <script src="../src/orderDetails.js"></script>
+</body>
+</html>
