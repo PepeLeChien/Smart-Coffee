@@ -36,31 +36,36 @@
 
             <form action="sugar__form">
                 <label for="sugar--input">CUBOS DE AZÚCAR</label>
+                <section class="input__div">
                 <input id="sugar--input" type="range" min="0" max="5" step="1" value="2"
-                onchange="document.getElementById('ice--output').value=value" list="ticks--sugar">
-                <output for="sugar--input" id="ice--output">2</output>
+                onchange="document.getElementById('sugar--output').value=value" list="ticks--sugar">
+                <output for="sugar--input" id="sugar--output">2</output>
                 <datalist id="ticks--sugar">
-                    <option value="0"></option>
                     <option value="1"></option>
                     <option value="2"></option>
                     <option value="3"></option>
                     <option value="4"></option>
                     <option value="5"></option>
                 </datalist>
+                </section>
+                
             </form>
 
             <form action="temp__form">
                 <label for="temp--input">TEMPERATURA</label>
-                <input id="temp--input" type="range" min="0" max="2" step="1" value="2"
-                onchange="document.getElementById('temp--output').value=value" list="ticks--temp">
-                <datalist id="ticks--temp">
-                    <option value="0"></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                </datalist>
+                <section class="input__div">
+                    <input id="temp--input" type="range" min="0" max="2" step="1" value="2"
+                    onchange="document.getElementById('temp--output').value=value" list="ticks--temp">
+                    <output for="temp--output" id="temp--output">Frío</output>
+                    <datalist id="ticks--temp">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </datalist>
+                </section>
             </form>
 
-            <div>
+            <div class="cream__div">
                 <p>CREMA</p>
                 <div>
                     <button>CON CREMA</button>
@@ -68,6 +73,11 @@
                 </div>
             </div>
             
+        </div>
+
+        <div class="total__div">
+            <p>TOTAL</p>
+            <p id="total--price">S/.10.00</p>
         </div>
 
         <button onclick="changeLocation()">SIGUIENTE</button>

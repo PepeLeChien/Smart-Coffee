@@ -78,99 +78,75 @@ body {
     font-weight: 400;
 }
 
-.sizes__div {
+.orders__div {
     width: 100%;
-    height: 23rem;
-    padding: 0 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.sizes__div div {
+    padding: 0 3rem;
+    min-height: 15rem;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-self: center;
-    justify-self: center;
+    gap: 3rem;
 }
 
-.sizes__div button {
-    width: 16rem;
-    height: 4rem;
-    border: none;
-    background-color: #BDBCBC;
-    border-radius: 1.3rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.9rem; 
-    font-weight: 400;
-}
-
-.options__div {
+.orders__div .eachOrder {
+    position: relative;
     width: 100%;
     height: auto;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: grid;
+    padding: 0.6rem 0;
+    grid-template-columns: 25% 45% 30%;
+    background-color: #D3D3D3;
+    justify-content: center;
+    align-items: center;
 }
 
-.options__div h3 {
+.eachOrder .amount__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eachOrder .amount__div button {
+    height: 1.8rem;
+    width: 4.4rem;
+    border: none;
+    background-color: #8D8B8B;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+
+.amount__div p {
     font-size: 2.4rem;
-    font-weight: 700;
 }
 
-.options__div form {
-    display: grid;
-    grid-template-columns: 45% 55%;
+.eachOrder > p {
+    font-size: 2.1rem;
+    text-align: center;
 }
 
-.options__div label {
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.options__div .input__div {
-    display: flex;
-    flex-direction: column;
-}
-
-.options__div output {
-    font-size: 2rem;
-}
-
-.cream__div {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 45% 55%;
-}
-
-.cream__div p {
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.cream__div div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cream__div button {
-    width: 8.8rem;
-    height: 4.7rem;
+.circle {
     border: none;
-    border-radius: 13px;
-    background-color: #D9D9D9;
-    font-size: 1.8rem;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
+    background-color: #8D8B8B;
+    border-radius: 50%;
+    font-weight: bold;
 }
+
+.cancel--circle {
+    position: absolute;
+    right: -1.5rem;
+    top: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
 
 .total__div {
     display: flex;
     width: calc(100% - 4rem);
-    height: 6rem;
+    height: 7rem;
     border-top: #000 solid 2px;
     border-bottom: #000 solid 2px;
     justify-content: space-between;
@@ -181,6 +157,27 @@ body {
     font-size: 2rem;
     font-weight: 400;
 }
+
+.addCoffe__div {
+    width: 80%;
+    height: 6.4rem;
+    display: flex;
+    background-color: #D3D3D3;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.addCoffe__div p {
+    font-size: 2rem;
+}
+
+.addCoffe--circle {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
 
 .main__div > button {
     width: 18rem;
