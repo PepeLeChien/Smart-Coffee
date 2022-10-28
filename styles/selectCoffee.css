@@ -102,10 +102,27 @@ body {
     position: absolute;
     width: 17.5rem;
     height: 17rem;
-    background-color: #D9D9D9;
     border-radius: 15px;
     top: -4rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.item--expreso {
+    background-image: url('../assets/expreso.jpg');
+}
+.item--americano {
+    background-image: url('../assets/americano.jpg');
+}
+.item--capuccino {
+    background-image: url('../assets/capuccino.jpg');
+}
+.item--mocca {
+    background-image: url('../assets/mocca.png');
+}
+
+
 
 .options__div p {
     position: absolute;
