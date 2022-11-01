@@ -13,12 +13,7 @@ function eatInside(table){
     if (table) {
         let tableButton2 = document.getElementById(`table--${table}`);
         tableButton2.style.backgroundColor = '#B3B3B3';
-        for (i=1; i <= 10; i++) {
-            if (table != i) {
-                let tableButton = document.getElementById(`table--${i}`).style.backgroundColor = '#CECDCD';
-            }
-        }
-    //location.href = "../pages/clientInfo.html";
+        location.href = "../pages/clientInfo.html";
     }
 
 }

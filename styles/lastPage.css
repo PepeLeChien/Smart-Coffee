@@ -29,9 +29,6 @@ body {
     width: 0px;
     justify-self: center;
     align-self: center;    
-    border-right: 3.4rem solid #000;
-    border-top: 1.7rem solid transparent;
-    border-bottom: 1.7rem solid transparent;
 }
 
 .logo__div {

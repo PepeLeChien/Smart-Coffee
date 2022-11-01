@@ -24,9 +24,9 @@
         <div class="sizes__div">
             <img src="../assets/glass.png" alt="">
             <div>
-                <button class="size--button">GIGANTE</button>
-                <button class="size--button">GRANDE</button>
-                <button class="size--button">NORMAL</button>
+                <button class="size--button" id="button--giant" onclick="paintSizes(1)">GIGANTE</button>
+                <button class="size--button" id="button--big" onclick="paintSizes(2)">GRANDE</button>
+                <button class="size--button" id="button--regular" onclick="paintSizes(3)">NORMAL</button>
             </div>
         </div>
         
@@ -68,8 +68,8 @@
             <div class="cream__div">
                 <p>CREMA</p>
                 <div>
-                    <button>CON CREMA</button>
-                    <button>SIN CREMA</button>
+                    <button id="button--cream" onclick="paintCream(1)">CON CREMA</button>
+                    <button id="button--nocream" onclick="paintCream(2)">SIN CREMA</button>
                 </div>
             </div>
             
