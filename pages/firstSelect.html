@@ -13,21 +13,21 @@
             <h1>SMART COFFEE</h1>
         </a>
     </div>
-
+    
     <section class="main__div">
         <h2>TIPO DE ORDEN</h2>
-        <button onclick="eatOutside()">PARA LLEVAR</button>
-        <button>PARA COMER AQUÍ</button>
+        <button onclick="eatOutside()" id="button--outside">PARA LLEVAR</button>
+        <button onclick="eatInside()" id="button--inside">PARA COMER AQUÍ</button>
         <div class="tables__div">
-            <button class="tables">N1</button>
-            <button class="tables">N2</button>
-            <button class="tables">N3</button>
-            <button class="tables">N4</button>
-            <button class="tables">N5</button>
-            <button class="tables">N6</button>
-            <button class="tables">N7</button>
-            <button class="tables">N8</button>
-            <button class="tables">N9</button>
+            <button class="tables" id="table--1" onclick="eatInside(1)">N1</button>
+            <button class="tables" id="table--2" onclick="eatInside(2)">N2</button>
+            <button class="tables" id="table--3" onclick="eatInside(3)">N3</button>
+            <button class="tables" id="table--4" onclick="eatInside(4)">N4</button>
+            <button class="tables" id="table--5" onclick="eatInside(5)">N5</button>
+            <button class="tables" id="table--6" onclick="eatInside(6)">N6</button>
+            <button class="tables" id="table--7" onclick="eatInside(7)">N7</button>
+            <button class="tables" id="table--8" onclick="eatInside(8)">N8</button>
+            <button class="tables" id="table--9" onclick="eatInside(9)">N9</button>
         </div>
     </section>
     <script src="../src/firstSelect.js"></script>

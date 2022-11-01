@@ -68,6 +68,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     gap: 3rem;
+    padding: 0 1rem
 }
 
 .main__div h2 {
